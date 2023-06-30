@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+{% load static %}
+<head>
+<meta charset="utf-8">
+<title>Foop</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/reset.css">
+<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/6-1.css">
+<link rel='stylesheet' href="{% static 'css/index.css' %}">
+<!-- <script type="text/javascript" src="index.js"></script>  -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+  
+
+</head>
+
+<body>
+
+  
+  <header>
+    <h1 class="midashi">
+    <a href="./time/art.html">Foop</a>
+  </h1>
+
+  <nav class="navbar">
+      <ul class="nav">
+        <li class="nav-item"><a href="profile.html">Profile</a></li>
+        <li class="nav-item"><a href="/index">Home</a></li>
+        <li class="nav-item"><a href="/store">Food</a></li>
+        <li class="nav-item"><a href="Job.html">Job</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/profile.php?id=100052633850737&viewas=100000686899395">Facebook</a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/fo___op">Instagram</a></li>
+        <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+        <li class="nav-item">/</li>
+        <li><a href="../ログイン画面.html"><i class="fas fa-user"></i></a></li>
+  
+      </ul>
+    </nav>
+    
+</header>
+
+
+
+<!-- <div class="main-visual">
+   </div> -->
+
+
+  <main>
+  <section id="box1" class="box" data-section-name="About">
+    <h2>Service to solve poverty problem x food loss problem</h2>
+  <!--/box--></section>
+
+
+  <section id="box5" class="box" data-section-name="Overview">
+    <div class="Service">
+  <div class="container">
+    <div class="content">
+        <h2 class="heading">Overview</h2>
+        <div class="list">
+            <div class="list-item">
+                <img src="{% static 'media/S__3784709.jpg'%}" class="image">
+                <h3 class="text1">Service</h3>
+                <div class="text">貧困問題×食品ロス問題を解消するサービス「Foop」
+                  <br>食べれるのに廃棄される食品を無料もしくは安価に食料品を購入できるサービス。
+                </div>
+            </div>
+            <div class="list-item">
+                <img src="{% static 'media/カート.png'%}" class="image">
+                <h3 class="text1">Shop</h3>
+                <div class="text">八王子市内にある農家さんやパン屋さんから仕入れた食料品を通常価格より安価に購入すことができる。
+                  <br>学生限定の求人情報を掲載。
+                </div>
+            </div>    
+            <div class="list-item">
+                <img src="{% static 'media/システム.png'%}" class="image">
+                <h3 class="text1">System</h3>
+                <div class="text">Django-oscarを用いて商品管理・商品登録・ログイン機能・カート機能などECサイトに必要な機能を揃えている。
+                  <br>レスポンシブデザイン対応可
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+  <!--/box--></section>
+  
+  <section id="box2" class="box" data-section-name="Service">
+      <div class="Service">
+    <h2>Service</h2>
+    <img src="{% static 'media/S__3784707-removebg-preview.png'%}" alt="">
+    <p>貧困問題・食品ロス問題を解消するサービス。<br>日本の子供の7人に1人が貧困である一方で、年間612万トンもの食品が廃棄されている問題に疑問を抱き、食品ロスになっている食品を廃棄するのではなく生活が苦しい方々、特にコロナ過で増加した学生貧困者の方たちに無料もしくは安価に食品を提供し支援することで、貧困問題・食品ロス問題を解消するサービス。</p>
+
+</div>
+  <!--/box--></section>
+  
+
+
+  <section id="box3" class="box" data-section-name="Poverty">
+    <div class="Service">
+    <h2>Poverty </h2>
+    <img src="{% static 'media/SDGs.png'%}" alt="">
+    <p>現在、日本の子供の7人に1人が貧困状態であり、サービス拠点である八王子市では推定ではあるが約5300人の児童が貧困状態だと言われている</p>
+  </div>
+  <!--/box--></section>
+  
+
+
+  
+  <section id="box4" class="box" data-section-name="Food">
+    <div class="Service">
+    <h2>Food loss </h2>
+    <img src="{% static 'media/食品ロス.jpg'%}" alt="">
+    <p>現在、日本では612万トンもの食品が廃棄されており、そのうちの328万トンが事業系食品ロスして廃棄されています。<br>
+      そして、サービス拠点である八王子市の食品ロスは17400トンの食品が廃棄されており、事業系食品ロスは推定2800トンだと言われています。</p>
+  </div>
+  <!--/box--></section>
+  
+
+  </main>
+
+
+
+         <!-- ハンバーガーメニュー -->
+         <div class="el_humburger"><!--ハンバーガーボタン-->
+            <div class="el_humburger_wrapper">
+              <span class="el_humburger_bar top"></span>
+              <span class="el_humburger_bar middle"></span>
+              <span class="el_humburger_bar bottom"></span>
+            </div>
+          </div>
+         
+          <header class="navi"><!--ナビゲーション-->
+            <div class="navi_inner">
+              <div class="navi_item"><a href="profile.html">Profile</a></div>
+              <div class="navi_item"><a href="/index">Home</a></div>
+                <div class="navi_item"><a href="/store">Food</a></div>
+              <div class="navi_item"><a href="Job.html">Job</a></div>
+              <div class="navi_item"><a href="https://www.instagram.com/fo___op">Instagram</a></div>
+              <div class="navi_item"><a href="https://www.facebook.com/profile.php?id=100052633850737&viewas=100000686899395">facebook</a></div>
+            </div>
+          </header>
+  
+
+
+  <footer id="footer">
+
+    <li id="taitle">
+      <img src="{% static 'media/S__3784707-removebg-preview.png'%}" alt="">
+    </li>
+
+    <h2>株式会社Foop</h2>
+  <small>参照： <a href="https://editor.p5js.org/g020c1170/full/a-xu73nYV" target="_blank">https://editor.p5js.org/g020c1170/full/a-xu73nYV</a></small>  
+  </footer>
+  
+  <script type="text/javascript" src="{% static 'js/index.js'%}"></script>  
+<!--   
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+<script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/js/6-1.js"></script> -->
+
+</body>
+</html>

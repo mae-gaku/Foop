@@ -1,0 +1,733 @@
+@charset "UTF-8";
+
+    .midashi{
+        font-family: 'Libre Baskerville', serif;
+        width:300px;
+        letter-spacing: 0.25em;
+        /* padding-top: 5px; */
+        /* padding-left: 40px; */
+        color: black;
+        font-size: 40px;
+        padding-left: 40px;
+      }
+      header {
+          padding: 10px 4% 10px;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: transparent;
+          
+        }
+      
+        a {	
+          text-decoration: none;
+          color: black;
+        }
+
+#mapcontainer{
+     margin-top: 175px;
+     height: 475px;
+    
+}
+
+/* .main{
+    position: absolute;
+     z-index:500; 
+     background-color: white; 
+     height: 200px;
+
+} */
+
+.navbar {
+height: 50px;
+padding: 0;
+margin-right: 150px;
+/* margin-top: 50px; */
+}
+.navbar ul {
+/* flexboxでナビゲーションバーを横並び配置する */
+display: flex;
+/* 縦幅中央に配置する指定 */
+align-items: center;
+/* 横幅中央に配置する指定 */
+justify-content: center;
+width: 100%;
+/* リストスタイルを削除 */
+list-style: none;
+}
+.navbar ul li {
+/* ナビゲーションメニュー同士の間隔を指定 */
+margin-left: 5%;
+margin-right: 5%;
+}
+.nav-item input {
+color: #000;
+font-size: 1.1rem;
+font-weight: 500;
+text-decoration: none;
+/* アニメーション速度を指定 */
+transition: color 0.3s ease-out;
+}
+
+
+ 
+
+    /*ハンバーガーボタン*/
+    .el_humburger {
+        position: fixed;
+        top: 50px;
+        right: 60px;
+        width: 43px;
+        height: 25px;
+        padding-top: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 0px;
+        z-index: 20;
+        cursor: pointer;
+        pointer-events: auto;
+        color: #000;
+        text-align: center;
+      }
+
+
+
+.el_humburger_wrapper {
+margin-bottom: 5px;
+width: 42px;
+display: inline-block; }
+
+
+.el_humburger_text {
+font-size: 12px;
+letter-spacing: 0.1em;
+font-family: "游ゴシック Medium", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif; }
+
+.js_humburgerOpen .el_humburger_text.el_humburger_text__menu {
+display: none; }
+
+.el_humburger_text.el_humburger_text__close {
+display: none; }
+
+.js_humburgerOpen .el_humburger_text.el_humburger_text__close {
+display: block; }
+
+
+.el_humburger span.el_humburger_bar {
+display: block;
+width: 100%;
+margin: 0 auto 9px;
+height: 1px;
+background: #000;
+-webkit-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out; }
+
+.el_humburger span.el_humburger_bar:last-child {
+margin-bottom: 0; }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar {
+background: #000; }
+
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.top {
+-webkit-transform: translateY(9px) rotate(-45deg);
+-ms-transform: translateY(9px) rotate(-45deg);
+transform: translateY(9px) rotate(-45deg); }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
+opacity: 0; }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
+-webkit-transform: translateY(-11px) rotate(45deg);
+-ms-transform: translateY(-11px) rotate(45deg);
+transform: translateY(-11px) rotate(45deg); }
+
+.el_humburgerButton.el_humburgerButton__close {
+top: 2%;
+right: 2%; }
+
+.el_humburgerButton__close span.el_humburger_bar {
+display: block;
+width: 35px;
+margin: 0 auto;
+height: 4px;
+background: #000; }
+
+.el_humburgerButton__close span.el_humburger_bar.top {
+-webkit-transform: translateY(5px) rotate(-45deg);
+-ms-transform: translateY(5px) rotate(-45deg);
+transform: translateY(5px) rotate(-45deg); }
+
+.el_humburgerButton__close span.el_humburger_bar.bottom {
+-webkit-transform: translateY(-6px) rotate(45deg);
+-ms-transform: translateY(-6px) rotate(45deg);
+transform: translateY(-6px) rotate(45deg); }
+
+.navi {
+position: fixed;
+right: 0;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.9);
+width: 450px;
+z-index: 1;
+padding-top: 100px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 600ms ease-out;
+-o-transition: all 600ms ease-out;
+transition: all 600ms ease-out;
+transform:translateZ(0) translateX(100%);
+overflow: auto; }
+.js_humburgerOpen .navi {
+  transform:translateZ(0) translateX(0); }
+@media screen and (max-width: 840px) {
+.navi {
+      padding: 100px 5% 0; }
+.js_humburgerOpen .navi {
+      width: 100%;} }
+
+.navi_item {
+margin-bottom: 28px;
+font-size: 20px;
+font-family: "Marcellus", serif !important;
+white-space: nowrap;
+margin-left: 90px; }
+.navi_item.op_innerLink {
+  cursor: pointer; }
+
+
+
+
+  
+        /* iPad pro */
+        @media screen and (device-width: 1024px) and (device-height: 1366px) { 
+          
+
+          html{
+            overflow-x: hidden;
+        }
+
+
+        .midashi{
+          font-family: 'Libre Baskerville', serif;
+          width:400px;
+          font-size: 50px;
+          letter-spacing: 0.25em;
+          padding-left: 10px;
+          color: black;
+        }
+
+        
+            header {
+                padding: 15px 4% 5px;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: transparent;
+                
+              }
+
+
+              
+            
+              a {	
+                text-decoration: none;
+                color: black;
+              }
+
+
+  
+          #mapcontainer {
+              height: 700px;
+              width: 100%;
+              margin-top: 300px;
+          }
+
+
+
+          .navbar {
+            width: 900px;
+            height: 100px;
+            padding: 0;
+            margin-right: 100px;
+            margin-top: 50px;
+            font-size: 30px;
+            }
+            .navbar ul {
+            /* flexboxでナビゲーションバーを横並び配置する */
+            display: flex;
+            /* 縦幅中央に配置する指定 */
+            align-items: center;
+            /* 横幅中央に配置する指定 */
+            justify-content: center;
+            width: 100%;
+            /* リストスタイルを削除 */
+            list-style: none;
+            }
+            .navbar ul li {
+            /* ナビゲーションメニュー同士の間隔を指定 */
+            margin-left: 5%;
+            margin-right: 5%;
+            }
+            .nav-item input {
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: none;
+            /* アニメーション速度を指定 */
+            transition: color 0.3s ease-out;
+            }
+
+
+
+    
+  /*ハンバーガーボタン*/
+  .el_humburger {
+      position: fixed;
+      top: 80px;
+      right: 40px;
+      width: 43px;
+      height: 25px;
+      padding-top: 1px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 0px;
+      z-index: 20;
+      cursor: pointer;
+      pointer-events: auto;
+      color: #000;
+      text-align: center;
+    }
+
+
+
+
+
+
+      }
+        /* スマホ(iPhone6/7/8) */
+        @media screen and (max-width: 375px) {
+
+          .midashi{
+            font-family: 'Libre Baskerville', serif;
+            width:200px;
+            font-size: 26px;
+            letter-spacing: 0.25em;
+            padding-left: 10px;
+            color: black;
+          }
+
+          
+              header {
+                padding: 15px 0;
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                  background-color: transparent;
+                  
+                }
+
+
+                
+              
+                a {	
+                  text-decoration: none;
+                  color: black;
+                }
+
+
+    
+            #mapcontainer {
+                height: 500px;
+                width: 100%;
+                margin-top: 180px;
+            }
+
+
+
+            .navbar {
+              width: 300px;
+              height: 50px;
+              padding: 0;
+              margin-top: 30px;
+
+
+    
+              margin-right: 130px;
+              /* margin-top: 50px; */
+              }
+              .navbar ul {
+              /* flexboxでナビゲーションバーを横並び配置する */
+              display: flex;
+              /* 縦幅中央に配置する指定 */
+              align-items: center;
+              /* 横幅中央に配置する指定 */
+              justify-content: center;
+              width: 100%;
+              /* リストスタイルを削除 */
+              list-style: none;
+              }
+              .navbar ul li {
+              /* ナビゲーションメニュー同士の間隔を指定 */
+              margin-left: 5%;
+              margin-right: 5%;
+              }
+              .nav-item input {
+              color: #000;
+              font-size: 1.1rem;
+              font-weight: 500;
+              text-decoration: none;
+              /* アニメーション速度を指定 */
+              transition: color 0.3s ease-out;
+              }
+
+
+
+      
+    /*ハンバーガーボタン*/
+    .el_humburger {
+        position: fixed;
+        top: 40px;
+        right: 25px;
+        width: 43px;
+        height: 25px;
+        padding-top: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 0px;
+        z-index: 20;
+        cursor: pointer;
+        pointer-events: auto;
+        color: #000;
+        text-align: center;
+      }
+
+
+    }
+
+
+    
+ /* スマホ(iPhone6/7/8 plus) */
+ @media screen and (max-width: 414px) { 
+  html{
+    overflow-x: hidden;
+}
+
+
+.midashi{
+  font-family: 'Libre Baskerville', serif;
+  width:200px;
+  font-size: 26px;
+  letter-spacing: 0.25em;
+  padding-left: 10px;
+  color: black;
+}
+
+
+    header {
+        padding: 15px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: transparent;
+        
+      }
+
+
+      
+    
+      a {	
+        text-decoration: none;
+        color: black;
+      }
+
+
+
+  #mapcontainer {
+      height: 700px;
+      width: 100%;
+      margin-top: 180px;
+  }
+
+
+
+  .navbar {
+    width: 320px;
+    height: 50px;
+    padding: 0;
+    margin-top: 30px;
+
+
+    /* margin-right: 100px; */
+    /* margin-top: 50px; */
+    }
+    .navbar ul {
+    /* flexboxでナビゲーションバーを横並び配置する */
+    display: flex;
+    /* 縦幅中央に配置する指定 */
+    align-items: center;
+    /* 横幅中央に配置する指定 */
+    justify-content: center;
+    width: 100%;
+    /* リストスタイルを削除 */
+    list-style: none;
+    }
+    .navbar ul li {
+    /* ナビゲーションメニュー同士の間隔を指定 */
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+    .nav-item input {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    /* アニメーション速度を指定 */
+    transition: color 0.3s ease-out;
+    }
+
+
+
+
+/*ハンバーガーボタン*/
+.el_humburger {
+position: fixed;
+top: 40px;
+right: 25px;
+width: 43px;
+height: 25px;
+padding-top: 1px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+padding-top: 0px;
+z-index: 20;
+cursor: pointer;
+pointer-events: auto;
+color: #000;
+text-align: center;
+}
+
+ 
+
+
+
+
+ }
+        
+
+       /* スマホ(iPhone XR) */
+   @media screen and (device-width: 414px) and (device-height: 896px) { 
+    html{
+      overflow-x: hidden;
+  }
+
+
+  .midashi{
+    font-family: 'Libre Baskerville', serif;
+    width:200px;
+    font-size: 26px;
+    letter-spacing: 0.25em;
+    padding-left: 10px;
+    color: black;
+  }
+
+  
+      header {
+          padding: 15px 0;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          background-color: transparent;
+          
+        }
+
+
+        
+      
+        a {	
+          text-decoration: none;
+          color: black;
+        }
+
+
+
+    #mapcontainer {
+        height: 700px;
+        width: 100%;
+        margin-top: 180px;
+    }
+
+
+
+    .navbar {
+      width: 320px;
+      height: 50px;
+      padding: 0;
+      margin-top: 30px;
+
+
+      /* margin-right: 100px; */
+      /* margin-top: 50px; */
+      }
+      .navbar ul {
+      /* flexboxでナビゲーションバーを横並び配置する */
+      display: flex;
+      /* 縦幅中央に配置する指定 */
+      align-items: center;
+      /* 横幅中央に配置する指定 */
+      justify-content: center;
+      width: 100%;
+      /* リストスタイルを削除 */
+      list-style: none;
+      }
+      .navbar ul li {
+      /* ナビゲーションメニュー同士の間隔を指定 */
+      margin-left: 5%;
+      margin-right: 5%;
+      }
+      .nav-item input {
+      color: #000;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      /* アニメーション速度を指定 */
+      transition: color 0.3s ease-out;
+      }
+
+
+
+
+/*ハンバーガーボタン*/
+.el_humburger {
+position: fixed;
+top: 40px;
+right: 25px;
+width: 43px;
+height: 25px;
+padding-top: 1px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+padding-top: 0px;
+z-index: 20;
+cursor: pointer;
+pointer-events: auto;
+color: #000;
+text-align: center;
+}
+
+
+
+
+
+}
+
+
+
+           
+        /* 
+        iPhone 12/iPhone 12 Pro */
+        @media screen and (device-width: 390px) and (device-height: 844px) { 
+
+          html{
+            overflow-x: hidden;
+            margin: 0;
+        }
+
+        
+        
+        .midashi{
+          font-family: 'Libre Baskerville', serif;
+          width:200px;
+          font-size: 26px;
+          letter-spacing: 0.25em;
+          padding-left: 10px;
+          color: black;
+        }
+
+        
+            header {
+                padding: 15px 0;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: transparent;
+                
+              }
+
+
+              
+            
+              a {	
+                text-decoration: none;
+                color: black;
+              }
+
+
+  
+          #mapcontainer {
+              height: 700px;
+              width: 100%;
+              margin-top: 180px;
+          }
+
+
+
+          .navbar {
+            width: 320px;
+            height: 50px;
+            padding: 0;
+            margin-top: 30px;
+
+  
+            /* margin-right: 100px; */
+            /* margin-top: 50px; */
+            }
+            .navbar ul {
+            /* flexboxでナビゲーションバーを横並び配置する */
+            display: flex;
+            /* 縦幅中央に配置する指定 */
+            align-items: center;
+            /* 横幅中央に配置する指定 */
+            justify-content: center;
+            width: 100%;
+            /* リストスタイルを削除 */
+            list-style: none;
+            }
+            .navbar ul li {
+            /* ナビゲーションメニュー同士の間隔を指定 */
+            margin-left: 5%;
+            margin-right: 5%;
+            }
+            .nav-item input {
+            color: #000;
+            font-size: 1.1rem;
+            font-weight: 500;
+            text-decoration: none;
+            /* アニメーション速度を指定 */
+            transition: color 0.3s ease-out;
+            }
+
+
+
+    
+  /*ハンバーガーボタン*/
+  .el_humburger {
+      position: fixed;
+      top: 40px;
+      right: 25px;
+      width: 43px;
+      height: 25px;
+      padding-top: 1px;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding-top: 0px;
+      z-index: 20;
+      cursor: pointer;
+      pointer-events: auto;
+      color: #000;
+      text-align: center;
+    }
+
+
+      }

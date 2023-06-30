@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+{% load static %}
+  <head>
+    <meta charset="utf-8">
+    <title>foop/Q&A</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Libre+Baskerville&display=swap" rel="stylesheet"> -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+     <!--CDNでjQuery読み込む-->
+     <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
+     
+     <link rel="stylesheet" href="{% static 'css/Q&A.css'%}">
+     <script type="text/javascript" src="{% static 'js/Q&A.js'%}"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    
+    <link rel="icon" href="favicon.ico">
+  </head>
+  <body>
+    
+    <header>
+        <h1 class="midashi">
+        <a href="">Foop</a>
+      </h1>   
+        
+   </header>
+
+    <main id="contact">
+      <div class="wrapper">
+        <h1>お問い合わせ</h1>
+        <p class="text_lead">お問い合わせはメール、または電話番号へお寄せください。</p>
+        <article>
+          <h2>メールでのお問い合わせ</h2>
+          <p class="text_content">メールアドレス：<a href="g020c1170@g.neec.ac.jp">g020c1170@g.neec.ac.jp</a><br>お問い合わせいただく際は、本文にお名前とお問い合わせ内容を忘れずにご記入ください。<br>3日を目安にご連絡いたします。</p>
+        </article>
+        <article>
+          <h2>電話でのお問い合わせ</h2>
+          <p class="text_content">電話番号：<a href="tel:080-xxxx-xxxx">080-xxxx-xxxx</a><br>電話での受付は平日10時〜17時のみとなります。<br>時期によって繋がりづらいことがあるため、その際は上記のメールアドレスへご連絡いただきますようお願い申し上げます。</p>
+        </article>
+        <p class="link_contact"><a href="form.html">お問い合わせはこちら</a></p>
+      </div>
+    </main>
+    <!-- <footer id="footer">
+      <p>Copyright&copy;2021 Forwa Pay</p>
+    </footer> -->
+
+
+
+    
+      
+         <!-- ハンバーガーメニュー -->
+         <div class="el_humburger"><!--ハンバーガーボタン-->
+            <div class="el_humburger_wrapper">
+              <span class="el_humburger_bar top"></span>
+              <span class="el_humburger_bar middle"></span>
+              <span class="el_humburger_bar bottom"></span>
+            </div>
+          </div>
+         
+          <header class="navi"><!--ナビゲーション-->
+            <div class="navi_inner">
+              <div class="navi_item"><a href="site.html">Home</a></div>
+              <div class="navi_item"><a href="food.html">Food</a></div>
+              <div class="navi_item"><a href="Job.html">Job</a></div>
+              <div class="navi_item"><a href="Map/map.html">Map</a></div>
+              <div class="navi_item"><a href="new.html">News</a></div>
+              <div class="navi_item"><a href="service.html">Company</a></div>
+            </div>
+          </header>
+  </body>
+</html>

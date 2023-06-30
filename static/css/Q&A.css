@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #222;
+  background-color: #e9e279;
+}
+
+
+.midashi{
+    font-family: 'Libre Baskerville', serif;
+    width:300px;
+    letter-spacing: 0.25em;
+    padding-top: 10px;
+    padding-left: 30px;
+    /* color: black; */
+    font-size: 35px;
+  
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+
+
+  header {
+    padding: 10px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+
+
+
+
+
+
+  .link_contact a {
+    display: inline-block;
+    padding: 15px 60px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    box-shadow: 0 5px 0 #b07c00;
+    background-color: #e29000;
+  }
+  
+  .link_contact a:hover {
+    background-color: #e89d19;
+  }
+
+  /* footer
+------------------------------ */
+#footer {
+    padding: 18px 0;
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    background-color: #222;
+  }
+
+
+
+
+  
+#information article h2 {
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    font-size: 1.15rem;
+    line-height: 1.8em;
+    border-bottom: 2px solid #d5c800;
+  }
+  
+  #information article .text_content {
+    line-height: 2.0em;
+    font-size: 0.85rem;
+  }
+  
+  
+  /* contact
+  ------------------------------ */
+  #contact {
+    padding: 80px 0 60px;
+    color: #222;
+    text-align: center;
+    background-color: #e9e279;
+    margin-top: 100px;
+  }
+  
+  #contact .wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+
+  
+#contact h1 {
+    display: inline-block;
+    margin: 0 auto 30px;
+    padding-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-bottom: 4px solid #222;
+  }
+  
+  #contact .text_lead {
+    margin-bottom: 35px;
+    line-height: 2.0em;
+    font-size: 0.85rem;
+  }
+  
+  #contact article {
+    margin-bottom: 40px;
+    padding: 40px 40px 35px;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+
+
+  
+#contact article h2 {
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    font-size: 1.15rem;
+    line-height: 1.8em;
+    border-bottom: 2px solid #d5c800;
+  }
+  
+  #contact article .text_content {
+    line-height: 2.0em;
+    font-size: 0.85rem;
+  }
+  
+  #contact article .text_content a {
+    color: #0072d3;
+    font-weight: 700;
+  }
+  
+  #contact article .text_content a:hover {
+    text-decoration: underline;
+  }
+
+
+
+      /*ハンバーガーボタン*/
+      .el_humburger {
+        position: fixed;
+        top: 50px;
+        right: 60px;
+        width: 43px;
+        height: 25px;
+        padding-top: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 0px;
+        z-index: 20;
+        cursor: pointer;
+        pointer-events: auto;
+        color: #000;
+        text-align: center;
+      }
+
+
+
+.el_humburger_wrapper {
+margin-bottom: 5px;
+width: 42px;
+display: inline-block; }
+
+
+.el_humburger_text {
+font-size: 12px;
+letter-spacing: 0.1em;
+font-family: "游ゴシック Medium", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif; }
+
+.js_humburgerOpen .el_humburger_text.el_humburger_text__menu {
+display: none; }
+
+.el_humburger_text.el_humburger_text__close {
+display: none; }
+
+.js_humburgerOpen .el_humburger_text.el_humburger_text__close {
+display: block; }
+
+
+.el_humburger span.el_humburger_bar {
+display: block;
+width: 100%;
+margin: 0 auto 9px;
+height: 1px;
+background: #000;
+-webkit-transition: all .2s ease-in-out;
+-o-transition: all .2s ease-in-out;
+transition: all .2s ease-in-out; }
+
+.el_humburger span.el_humburger_bar:last-child {
+margin-bottom: 0; }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar {
+background: #000; }
+
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.top {
+-webkit-transform: translateY(9px) rotate(-45deg);
+-ms-transform: translateY(9px) rotate(-45deg);
+transform: translateY(9px) rotate(-45deg); }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
+opacity: 0; }
+
+.js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
+-webkit-transform: translateY(-11px) rotate(45deg);
+-ms-transform: translateY(-11px) rotate(45deg);
+transform: translateY(-11px) rotate(45deg); }
+
+.el_humburgerButton.el_humburgerButton__close {
+top: 2%;
+right: 2%; }
+
+.el_humburgerButton__close span.el_humburger_bar {
+display: block;
+width: 35px;
+margin: 0 auto;
+height: 4px;
+background: #000; }
+
+.el_humburgerButton__close span.el_humburger_bar.top {
+-webkit-transform: translateY(5px) rotate(-45deg);
+-ms-transform: translateY(5px) rotate(-45deg);
+transform: translateY(5px) rotate(-45deg); }
+
+.el_humburgerButton__close span.el_humburger_bar.bottom {
+-webkit-transform: translateY(-6px) rotate(45deg);
+-ms-transform: translateY(-6px) rotate(45deg);
+transform: translateY(-6px) rotate(45deg); }
+
+.navi {
+position: fixed;
+right: 0;
+height: 100%;
+background-color: rgba(255, 255, 255, 0.9);
+width: 450px;
+z-index: 3;
+padding-top: 100px;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-transition: all 600ms ease-out;
+-o-transition: all 600ms ease-out;
+transition: all 600ms ease-out;
+transform:translateZ(0) translateX(100%);
+overflow: auto; }
+.js_humburgerOpen .navi {
+  transform:translateZ(0) translateX(0); }
+@media screen and (max-width: 840px) {
+.navi {
+      padding: 100px 5% 0; }
+.js_humburgerOpen .navi {
+      width: 100%;} }
+
+.navi_item {
+margin-bottom: 28px;
+font-size: 20px;
+font-family: "Marcellus", serif !important;
+white-space: nowrap;
+margin-left: 90px; }
+.navi_item.op_innerLink {
+  cursor: pointer; }
+
+
+
+     /* 
+        iPhone 12/iPhone 12 Pro */
+        @media screen and (device-width: 390px) and (device-height: 844px) { 
+
+          html{
+            overflow-x: hidden;
+        }
+        
+        .midashi{
+          font-family: 'Libre Baskerville', serif;
+          width:300px;
+          letter-spacing: 0.25em;
+          padding-top: 5px;
+          padding-left: 20px;
+          /* color: black; */
+          font-size: 37px;
+        
+        }
+            header {
+    padding: 0px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+      
+          
+              /*ハンバーガーボタン*/
+      .el_humburger {
+        position: fixed;
+        top: 50px;
+        right: 30px;
+        width: 43px;
+        height: 25px;
+        padding-top: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 0px;
+        z-index: 20;
+        cursor: pointer;
+        pointer-events: auto;
+        color: #000;
+        text-align: center;
+      }
+
+            /* contact
+  ------------------------------ */
+  #contact {
+    padding: 80px 0 60px;
+    color: #222;
+    text-align: center;
+    background-color: #e9e279;
+    margin-top: 75px;
+  }
+
+      }

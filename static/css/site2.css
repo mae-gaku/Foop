@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+
+.midashi{
+    font-family: 'Libre Baskerville', serif;
+    width:300px;
+    letter-spacing: 0.25em;
+    padding-top: 10px;
+    /* padding-left: 10px; */
+    /* color: black; */
+    font-size: 35px;
+  
+  }
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+    letter-spacing : 0.2em;
+    font-size: 20px;
+    overflow-x: hidden;
+    
+  }
+header {
+    padding: 10px 4% 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    font-family: 'Libre Baskerville', serif;
+  }
+  a {	
+    text-decoration: none;
+    color: black;
+  }
+  nav {
+    margin: 0 0 0 auto;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+  }
+  li {
+    margin: 0 0 0 15px;
+    font-size: 14px;
+   
+  }
+  .main-visual {
+    display: flex;
+    margin-top: 130px;
+    justify-content: center;
+    align-items: center;
+  /* margin: 130px 20px 0 20px; */
+    height: 100vh;
+    background-image: url('../media/tomatoes.jpg') top center / cover no-repeat;
+    /* background: url('b4740446640313ca0cdb1008b99cbb76-105.jpg') top center / cover no-repeat; */
+    background-size: contain;
+    font-weight: bold;
+  
+  
+  }
+  h2 {
+    margin: 0;
+    font-size: 30px;
+    /* font-weight: normal; */
+    font-weight: bold;
+    color: red;
+    /* color: black; */
+  }
+  .content{
+    font-size: 25px;
+    margin: 0 25px;
+    position: absolute;
+    text-align: center;
+    padding: 40px;
+    background-color: rgba( 220, 220, 220, 0.30 );
+  }
+  a{
+    margin: auto;
+    text-align: center;
+  
+  }
+  .simple_square_btn2 {
+    font-size: 20px;
+    display: block;
+    position: relative;
+    width: 160px;
+    padding: 0.8em;
+    text-align: center;
+    text-decoration: none;
+    color: #1B1B1B;
+    background: #fff;
+    border:1px solid #1B1B1B;
+  }
+  .mainView{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .background {
+    /* background-color: #ffcd03; */
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+  }
+  .split {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 70vh;
+    margin-top: 700px;
+  }
+  .split >* {
+    width: 50%;
+  }
+  
+  .split__img-wrapper {
+    position: relative;
+  }
+  .split__img {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+  }
+  .split__img {
+    opacity: 0;
+    transition: opacity .7s;
+  }
+  .split.show .split__img {
+    opacity: 1;
+  }
+  .split__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px; 
+  }
+  .split__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .split__text {
+    margin-top: 10px;
+    line-height: 1.6;
+    padding: 10px;
+  }
+  .navbar {
+    height: 50px;
+    padding: 0;
+    margin-right: 130px;
+    margin-top: 50px;
+  }
+  .navbar ul {
+    /* flexboxでナビゲーションバーを横並び配置する */
+    display: flex;
+    /* 縦幅中央に配置する指定 */
+    align-items: center;
+    /* 横幅中央に配置する指定 */
+    justify-content: center;
+    width: 100%;
+    /* リストスタイルを削除 */
+    list-style: none;
+  }
+  .navbar ul li {
+    /* ナビゲーションメニュー同士の間隔を指定 */
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .nav-item a {
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    /* アニメーション速度を指定 */
+    transition: color 0.3s ease-out;
+  }
+  .nav-item a:hover {
+    /* hover後に色を変化させる指定 */
+    color: gray;
+  }
+
+
+
+    /*ハンバーガーボタン*/
+    .el_humburger {
+        position: fixed;
+        top: 33px;
+        right: 30px;
+        width: 43px;
+        height: 25px;
+        padding-top: 1px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-top: 0px;
+        z-index: 20;
+        cursor: pointer;
+        pointer-events: auto;
+        color: #000;
+        text-align: center;
+      }
+
+      .el_humburger_wrapper {
+        margin-bottom: 5px;
+        width: 42px;
+        display: inline-block; }
+       
+      
+      .el_humburger_text {
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        font-family: "游ゴシック Medium", YuGothic, "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, sans-serif; }
+       
+      .js_humburgerOpen .el_humburger_text.el_humburger_text__menu {
+        display: none; }
+       
+      .el_humburger_text.el_humburger_text__close {
+        display: none; }
+       
+      .js_humburgerOpen .el_humburger_text.el_humburger_text__close {
+        display: block; }
+       
+      
+      .el_humburger span.el_humburger_bar {
+        display: block;
+        width: 100%;
+        margin: 0 auto 9px;
+        height: 1px;
+        background: #000;
+        -webkit-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out; }
+       
+      .el_humburger span.el_humburger_bar:last-child {
+        margin-bottom: 0; }
+        .el_humburgerButton.el_humburgerButton__close {
+            top: 2%;
+            right: 2%; }
+           
+          .el_humburgerButton__close span.el_humburger_bar {
+            display: block;
+            width: 35px;
+            margin: 0 auto;
+            height: 4px;
+            background: #000; }
+           
+          .el_humburgerButton__close span.el_humburger_bar.top {
+            -webkit-transform: translateY(5px) rotate(-45deg);
+            -ms-transform: translateY(5px) rotate(-45deg);
+            transform: translateY(5px) rotate(-45deg); }
+           
+          .el_humburgerButton__close span.el_humburger_bar.bottom {
+            -webkit-transform: translateY(-6px) rotate(45deg);
+            -ms-transform: translateY(-6px) rotate(45deg);
+            transform: translateY(-6px) rotate(45deg); }
+
+
+            .js_humburgerOpen .el_humburger span.el_humburger_bar {
+                background: #000; }
+               
+              
+              .js_humburgerOpen .el_humburger span.el_humburger_bar.top {
+                -webkit-transform: translateY(9px) rotate(-45deg);
+                -ms-transform: translateY(9px) rotate(-45deg);
+                transform: translateY(9px) rotate(-45deg); }
+               
+              .js_humburgerOpen .el_humburger span.el_humburger_bar.middle {
+                opacity: 0; }
+               
+              .js_humburgerOpen .el_humburger span.el_humburger_bar.bottom {
+                -webkit-transform: translateY(-11px) rotate(45deg);
+                -ms-transform: translateY(-11px) rotate(45deg);
+                transform: translateY(-11px) rotate(45deg); }

@@ -1,0 +1,275 @@
+@charset "utf-8";
+
+/*
+.midashi{
+  font-family: 'Libre Baskerville', serif;
+  width:300px;
+  letter-spacing: 0.25em;
+  padding-top: 10px;
+  padding-left: 30px;
+   color: black; 
+  font-size: 40px;
+  
+
+}*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  background-color: white;
+  letter-spacing : 0.2em;
+  font-size: 20px;
+  overflow-x: hidden;
+  
+}
+
+
+/*
+ header {
+   padding: 10px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  font-family: 'Libre Baskerville', serif;
+} 
+
+a {	
+  text-decoration: none;
+  color: black;
+}
+
+/* 
+ nav { 
+  margin: 0 0 0 auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+li {
+  margin: 0 0 0 15px;
+  font-size: 14px;
+ 
+} */
+
+
+
+.navbar {
+  height: 50px;
+  padding: 0;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.navbar ul {
+  /* flexboxでナビゲーションバーを横並び配置する */
+  display: flex;
+  /* 縦幅中央に配置する指定 */
+  align-items: center;
+  /* 横幅中央に配置する指定 */
+  justify-content: center;
+  width: 100%;
+  /* リストスタイルを削除 */
+  list-style: none;
+}
+.navbar ul li {
+  /* ナビゲーションメニュー同士の間隔を指定 */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.nav-item a {
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  /* アニメーション速度を指定 */
+  transition: color 0.3s ease-out;
+}
+.nav-item a:hover {
+  /* hover後に色を変化させる指定 */
+  color: gray;
+}
+
+
+.main-visual {
+  display: flex;
+  margin-top: 130px;
+  justify-content: center;
+  align-items: center;
+  height: 130vh;
+  background: url('d33942-33-43d319778cb1af874b80-0.jpg') top center / cover no-repeat;
+  /* background-size: contain; */
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+
+  #ii{
+    margin-top: 130px;
+
+
+     
+}
+
+
+
+/*#video-area{
+  position: fixed;
+  z-index: -1;最背面に設定
+  top: 0;
+  right:0;
+  left:0;
+  bottom:0;
+  overflow: hidden;
+} */
+/* 
+#video {
+  
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 177.77777778vh; 
+  height: 56.25vw; 
+  min-height: 100%;
+  min-width: 100%;
+} */
+
+
+
+ .slider {
+ 
+    /* margin-top: 100px; */
+    text-align: center;
+  }
+
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .background {
+    /* background-color: #ffcd03; */
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    z-index: 1;
+  }
+  
+
+  .split {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    height: 70vh;
+    margin-top: 700px;
+  }
+  .split >* {
+    width: 50%;
+  }
+  
+  .split__img-wrapper {
+    position: relative;
+  }
+  .split__img {
+    position: fixed;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+  }
+  .split__img {
+    opacity: 0;
+    transition: opacity .7s;
+  }
+  .split.show .split__img {
+    opacity: 1;
+  }
+  .split__body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px; 
+  }
+  .split__title {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .split__text {
+    margin-top: 10px;
+    line-height: 1.6;
+    padding: 10px;
+  }
+
+
+  #footer06 {
+    background: #222;
+  margin: 0;
+  }
+   
+  #footer06 .cont-wrap {
+    padding: 40px 0;
+  }
+   
+  #footer06 .info .address {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 1px solid #fff;
+    color: #ccc;
+  }
+   
+  #footer06 .cont .nav a {
+    color: #ccc;
+  }
+   
+  #footer06 .cont-wrap .map {
+    width: 700px;
+    height: 300px;
+  }
+   
+  #footer06 .cont-wrap .map iframe {
+    width: 100%;
+    height: 100%;
+  }
+   
+  @media only screen and (min-width: 641px) {
+    #footer06 .cont-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+    /*ハンバーガーボタン*/
+
+
+    .navi{
+      display: none;
+    }
+
+    .navi_item{
+      display: none;
+
+    }
+    .navbar1{
+      display: none;
+    }

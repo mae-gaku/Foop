@@ -1,0 +1,153 @@
+{% extends 'foopbase.html'%}
+<!DOCTYPE html>
+<html lang="ja">
+{% load static %}
+<head>
+{%  block head %}
+<link rel="icon" href="favicon.ico">
+<title>Foop/job</title>
+<link rel='stylesheet' href="{% static 'css/Job.css'%}">
+<script type="text/javascript" src="{% static 'js/Job.js' %}"></script> 
+{% endblock %}
+</head>
+
+
+<body>
+
+    <header>
+        <h1 class="midashi">
+        <a href="/">Foop</a>
+      </h1>
+    {% block navbar %}{% endblock %}
+    </header>
+{% block body %}
+    <div id="main">
+       
+     </div>
+
+     <form action="user_list.php" method="post" class="form">
+        <input type="text" name="id" id="id" placeholder="キーワード">
+
+        <input type="text" name="user_name" id="name" placeholder="場所"><br>
+        <input type="submit" id="submit" value="求人">
+    </form>
+
+
+
+    <hr>
+
+
+<div class="card-container">
+  <div class="card-img">
+      <a href="#"><img width="768" height="512" src="{% static 'media/delivery.jpg'%}" alt="" /></a>
+  </div>
+  <div class="card-text">
+      <a href="#"><h2>Foop配達員
+      </h2>
+      <p>時給：1050円</p> 
+      <p>エリア：八王子駅から約10分~15分</p>
+      <p>詳細：自転車で配達をしてもらいます。</p>
+    </div>
+ </a>
+      <!-- <p>テキストが入る要素...</p> -->
+  </div>
+</div>
+         
+<div class="card-container">
+  <div class="card-img">
+      <a href="#"><img width="768" height="512" src="{% static 'media/農家.jpg'%}" alt="" /></a>
+  </div>
+  <div class="card-text">
+      <a href="#"><h2>農家さん野菜収穫</h2>
+
+ </a>
+      <!-- <p>テキストが入る要素...</p> -->
+  </div>
+</div>
+
+
+<div class="card-container">
+  <div class="card-img">
+      <a href="#"><img width="768" height="512" src="{% static 'media/パン屋.jpg'%}" alt="" /></a>
+  </div>
+  <div class="card-text">
+      <a href="#"><h2>パン屋さん
+      </h2>
+      <p>時給：1050円</p> 
+      <p>エリア：八王子駅から約10分~15分</p>
+      <p>詳細：自転車で配達をしてもらいます。</p>
+    </div>
+ </a>
+      <!-- <p>テキストが入る要素...</p> -->
+  </div>
+</div>
+
+
+<div class="card-container">
+  <div class="card-img">
+      <a href="#"><img width="768" height="512" src="{% static 'media/イベント.jpg'%}" alt="" /></a>
+  </div>
+  <div class="card-text">
+      <a href="#"><h2>イベントスタッフ
+      </h2>
+      <p>時給：1050円</p> 
+      <p>エリア：八王子駅から約10分~15分</p>
+      <p>詳細：自転車で配達をしてもらいます。</p>
+    </div>
+ </a>
+      <!-- <p>テキストが入る要素...</p> -->
+  </div>
+</div>
+
+
+<div class="card-container">
+  <div class="card-img">
+      <a href="#"><img width="768" height="512" src="{% static 'media/食堂.jpg'%}" alt="" /></a>
+  </div>
+  <div class="card-text">
+      <a href="#"><h2>食堂キッチンスタッフ
+      </h2>
+      <p>時給：1050円</p> 
+      <p>エリア：八王子駅から約10分~15分</p>
+      <p>詳細：自転車で配達をしてもらいます。</p>
+    </div>
+ </a>
+      <!-- <p>テキストが入る要素...</p> -->
+  </div>
+</div>
+
+
+<div class="card-container">
+  <div class="card-img">
+      <a href="#"><img width="768" height="512" src="{% static 'media/スーパーアルプス.jpg'%}" alt="" /></a>
+  </div>
+  <div class="card-text">
+      <a href="#"><h2>スーパー　レジスタッフ
+      </h2>
+      <p>時給：1050円</p> 
+      <p>エリア：八王子駅から約10分~15分</p>
+      <p>詳細：自転車で配達をしてもらいます。</p>
+    </div>
+ </a>
+      <!-- <p>テキストが入る要素...</p> -->
+  </div>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+</body>
+
+</html>
+    
